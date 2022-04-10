@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="../img/logo.png" type="image/icon type" />
+    <link rel="stylesheet" href="../main.css">
+    <title>Minecraft Bedrock - Deutsch</title>
+</head>
+<body>
+    <div id="container">
+        <div id="main">
+            <div class="top-banner"></div>
+            <div id="upper-nav">
+                <a href="index"><img class="nav-img" src="../img/logo.png" alt="Logo" width="55x" height="55px"></a>
+                <ul>
+                    <li><a href="index">Startseite</a></li>
+                    <li><a href="#">Resourcen Pakete</a></li>
+                    <li><a href="#">Verhaltens Pakete</a></li>
+                    <li><a href="#">Addons</a></li>
+                    <li><a href="#">Mitwirkende</a></li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    <footer id="footer">
+        <p></p>
+    </footer>
+    <script>
+        /* https://www.w3schools.com/howto/howto_js_navbar_sticky.asp */
+        window.onscroll = function() {navScroller()};
+        var navbar = document.getElementById("upper-nav");
+        var sticky = navbar.offsetTop;
+        function navScroller() {
+        if (window.pageYOffset >= sticky) {navbar.classList.add("stick-nav");} else {navbar.classList.remove("stick-nav");}}
+    </script>
+    <style>
+        /* https://www.w3schools.com/howto/howto_js_navbar_sticky.asp */
+        .stick-nav {position:fixed;top:0;width:100%;}
+    </style>
+</body>
+</html>
